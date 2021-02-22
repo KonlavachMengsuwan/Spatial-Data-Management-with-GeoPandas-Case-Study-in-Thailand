@@ -34,7 +34,7 @@ import geojson
 
 ```
 os.getcwd()
-province = gpd.read_file('C:/Users/konla/Desktop/Python/geo_environment/Data/Shapefile/Thailand/Province-20210207T153315Z-001/Province/TH_Province.shp')
+province = gpd.read_file('/TH_Province.shp')
 ```
 
 
