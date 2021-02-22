@@ -42,4 +42,4 @@ province = gpd.read_file('/TH_Province.shp')
 province.plot(figsize = (6,5));
 ```
 ### Plot
-![](Thailand-Shapefile.PNG)<!-- -->
+![](Thailand-Shapefile.png)<!-- -->
