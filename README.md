@@ -41,5 +41,49 @@ province = gpd.read_file('/TH_Province.shp')
 ```
 province.plot(figsize = (6,5));
 ```
-### Plot
 ![](Thailand-Shapefile.png)<!-- -->
+
+## Shapefile Information
+### First three lines
+```
+province.head(3)
+```
+
+### First Row
+```
+province.iloc[0]
+```
+
+### First Column
+```
+province.iloc[:,0]
+```
+
+### List all column names
+```
+list(province.columns) 
+```
+
+### Columns Names
+```
+province.columns
+```
+
+## First Column Name
+```
+province.columns[0]
+```
+### coordinate reference system
+```
+province.crs
+```
+
+### Calculate boundary of polygon
+```
+province.geometry.bounds
+```
+
+### Calculate Area
+```
+province.geometry.area
+```
