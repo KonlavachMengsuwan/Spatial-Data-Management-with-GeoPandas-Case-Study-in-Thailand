@@ -37,4 +37,9 @@ os.getcwd()
 province = gpd.read_file('/TH_Province.shp')
 ```
 
+## Plot Shapefile
+```
+province.plot(figsize = (6,5));
+```
 
+![](Thailand-Shapefile.PNG)<!-- -->
