@@ -43,7 +43,13 @@ province.plot(figsize = (6,5));
 ```
 ![](Thailand-Shapefile.png)<!-- -->
 
-## Shapefile Information
+## Shapefile information
+
+### Length of dataframe
+```
+len(province)
+```
+
 ### First three lines
 ```
 province.head(3)
@@ -69,10 +75,11 @@ list(province.columns)
 province.columns
 ```
 
-## First Column Name
+### First Column Name
 ```
 province.columns[0]
 ```
+
 ### coordinate reference system
 ```
 province.crs
@@ -83,7 +90,35 @@ province.crs
 province.geometry.bounds
 ```
 
-### Calculate Area
+### Calculate area
 ```
 province.geometry.area
 ```
+
+### Average Area
+```
+province.Area_km2_.mean()
+```
+
+## Create dataframe and store the province which have the area greater than 8000 km2
+```
+big_province = province[province.Area_km2_ > 8000]
+```
+
+### How many province which has the area greater than 8000 km2
+```
+len(big_province)
+```
+
+### Add one more row after the last column
+```
+big_province['area'] = (province.geometry.area)
+list(big_province.columns) 
+```
+
+## Plot
+```
+big_province.plot(column = 'area', cmap = 'OrRd', figsize = (6,5));
+```
+
+![](Big Provinces.png)<!-- -->
