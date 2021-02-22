@@ -72,6 +72,5 @@ len(big_province)
 big_province['area'] = (province.geometry.area)
 list(big_province.columns) 
 
-# Plot
 big_province.plot(column = 'area', cmap = 'OrRd', figsize = (6,5));
 
