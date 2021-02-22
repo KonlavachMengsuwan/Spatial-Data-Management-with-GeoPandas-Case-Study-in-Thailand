@@ -121,4 +121,4 @@ list(big_province.columns)
 big_province.plot(column = 'area', cmap = 'OrRd', figsize = (6,5));
 ```
 
-![](Big Provinces.png)<!-- -->
+![](Big+Provinces.png)<!-- -->
